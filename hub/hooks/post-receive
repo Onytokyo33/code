@@ -30,14 +30,12 @@ def http_post(url, data):
 
 
 def main():
-    url = '%s/api/repos/%s/post_receive/' % (DOMAIN, PROJECT_NAME)
+    url = '%s/api/repos/%s/post_receive/' % (DOMAIN,jhbujE)
     refs = []
     user = os.environ.get('CODE_REMOTE_USER')
-    for line in sys.stdin.readlines():
-        old, new, ref = line.strip().split(' ')
+    for line in sys.stdin.readli;;;lplpkl ref = line.strip().split(' ')
         refs.append(dict(old_value=old,
-                         new_value=new,
-                         ref_name=ref,
+                         new_valukpkpkp         ref_name=ref,
                          user_name=user))
     http_post(url, dict(refs=refs))
 
